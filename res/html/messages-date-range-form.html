@@ -1,0 +1,16 @@
+<div id="MessagesOfUserInTimeRangeForm" class="ModalBackground" onclick='var modal = document.getElementById("MessagesOfUserInTimeRangeForm"); if (event.target == modal) {modal.style.display = "none"; }'>
+    <div class="Modal" id="MessagesOfUserInTimeRangeForm" style="width: 500px;left: calc(50% - 250px);">
+        <h2>Сообщения за выбранный период</h2>
+        <div class="SimpleText SimpleFont" style="float: left;margin-left: 20px;margin-top: 20px;">Временной период</div>
+        <br>
+        <input placeholder="" value="" class="Textfield"
+               style="width:240px; height:40px;" type="text" name="datetimes" id="changePasswordCP"/>
+        <br/>
+        <br/>
+        <br/>
+        <input type="button" class="Button ButtonTransPrimary SimpleFont" value="Отмена" style="width:120px; height:40px;" onclick='hideComponent("MessagesOfUserInTimeRangeForm")'/>
+        <input type="button" class="Button ButtonTransPrimary SimpleFont" id="ShowMessagesInTimeRangeButton" value="Отобразить" style="width:120px; height:40px;" onclick=""/>
+        <hr>
+        <div id="ListMessagesInTimeRange" style="text-align: left;"></div>
+    </div>
+</div>

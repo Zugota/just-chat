@@ -1,0 +1,28 @@
+<div class="HeaderHolder" style="height: 60px; display: flex; padding: 10px; background-color: #006ee5">
+<div class="Header" style="height: 60px">
+    <div class="HeaderLeft">
+        <% $optionsSvg %>
+        <a style="cursor: pointer;display: flex; justify-content: center; align-items: center; border-radius: 5px; height: 40px; width: 284px; color: transparent;" class="Button ButtonTransDark SimpleFont" onclick='location.href="/"'>
+            <img src="favicon.png" class="HeaderLogoSvg" style="height: 40px; width: 40px"/>
+            <div style="display: flex; font-size: 20px;" class="SimpleText SimpleFont">JustChat</div>
+        </a>
+    </div>
+
+    <div class="HeaderRight">
+        <a style="cursor: pointer;display: flex; justify-content: center; align-items: center; width: 457px;" <% $headerAccountAction %> class="Button ButtonTransDark <% $headerAccountClasses %>">
+        <img src="user.svg" class="HeaderUserProfileSvg" style="height: 20px; width: 20px"/>
+        <div style="display: inline-block;" class="SimpleText SimpleFont"><% $headerAccountText %></div>
+        <img src="caret-down.svg" class="HeaderUserCaretSvg" style="display: <% $HeaderUserCaretSvgDisplay %>;"/>
+
+        <div id="accountDropdown" class="DropdownHolder SimpleFont" style="width: 467px; border-radius: 5px" onmouseleave='showComponent("accountDropdown")'
+             onclick='hideComponent("accountDropdown")'>
+            <div class="DropdownItem" onclick='location.href="/user"'>Чат</div>
+            <div class="DropdownItem" onclick="getMyIpAddress()">Мой IP</div>
+            <div class="DropdownItem" onclick="showChangePasswordForm()">Изменить пароль</div>
+            <div class="DropdownItem" onclick='location.href="/deleteAccount"'>Удалить аккаунт</div>
+            <div class="DropdownItem" onclick='location.href="/logout"'>Выйти</div>
+        </div>
+        </a>
+    </div>
+</div>
+</div>
